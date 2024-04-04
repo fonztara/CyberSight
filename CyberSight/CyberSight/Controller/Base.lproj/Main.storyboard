@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="CyberSight" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eb5-20-Lam">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </arView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QzT-fq-jh5">
+                                <rect key="frame" x="16" y="415.66666666666669" width="361" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="eb5-20-Lam" secondAttribute="bottom" id="2QH-N0-Hir"/>
+                            <constraint firstItem="QzT-fq-jh5" firstAttribute="centerY" secondItem="U0K-SW-4ec" secondAttribute="centerY" id="B7c-x0-d3C"/>
+                            <constraint firstItem="eb5-20-Lam" firstAttribute="centerY" secondItem="U0K-SW-4ec" secondAttribute="centerY" id="G5s-aT-hRx"/>
+                            <constraint firstItem="eb5-20-Lam" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="Lan-MA-iBO"/>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="eb5-20-Lam" secondAttribute="trailing" id="eE0-wT-EHK"/>
+                            <constraint firstItem="eb5-20-Lam" firstAttribute="leading" secondItem="U0K-SW-4ec" secondAttribute="leading" id="hff-EF-s1k"/>
+                            <constraint firstItem="eb5-20-Lam" firstAttribute="centerX" secondItem="U0K-SW-4ec" secondAttribute="centerX" id="plp-cu-Flb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QzT-fq-jh5" secondAttribute="trailing" id="sq0-Rz-Xpy"/>
+                            <constraint firstItem="QzT-fq-jh5" firstAttribute="leading" secondItem="U0K-SW-4ec" secondAttribute="leadingMargin" id="ysn-jH-J47"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="eb5-20-Lam" id="xp6-Fp-48d"/>
+                        <outlet property="messageLabel" destination="QzT-fq-jh5" id="CXH-ft-RVs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
